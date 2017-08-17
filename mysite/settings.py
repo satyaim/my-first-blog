@@ -25,7 +25,7 @@ SECRET_KEY = 'y6db$bwrsysd-gm5f7vm&3i903r(_plv^ai@yim8df-=u#5-7m'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1','satyaim.pythonanywhere.com']
 
 
 # Application definition
