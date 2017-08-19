@@ -3,6 +3,15 @@
 		<title>	BLOG |</title>
 	</head>
 	<body>
-		<h1>BLOGGER</h1>
+		<h1><big>BLOGGER</big><small>.COM</small></h1>
+		{% for post in posts %}
+		<article>
+				<h3>{{post.title}}</h3>
+				<section> Published On: {{post.published_date}} 
+				</section>
+				<p>{{post.text}}</p>
+				<br/>
+		</article>
+		{% endfor %}
 	</body>
 </html>
