@@ -1,13 +1,15 @@
+{% load staticfiles %}
 <html>
 	<head>
 		<title>	BLOG |</title>
+		<link rel="stylesheet" href="{% static 'css/blog.css' %}">
 	</head>
 	<body>
 		<h1><big>BLOGGER</big><small>.COM</small></h1>
 		{% for post in posts %}
 		<article>
 				<h3>{{post.title}}</h3>
-				<section> Published On: {{post.published_date}} 
+				<section> <b> Published On: </b> {{post.published_date}} 
 				</section>
 				<p>{{post.text | linebreaks}}</p>
 				<br/>
