@@ -9,7 +9,7 @@
 				<h3>{{post.title}}</h3>
 				<section> Published On: {{post.published_date}} 
 				</section>
-				<p>{{post.text}}</p>
+				<p>{{post.text | linebreaks}}</p>
 				<br/>
 		</article>
 		{% endfor %}
